@@ -3,7 +3,7 @@ Contributors: andersthorborg
 Tags: afc, advanced custom fields, image crop, image, crop
 Requires at least: 3.5
 Tested up to: 4.6
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,9 @@ function my_register_fields()
 
 
 == Changelog ==
+
+= 1.5.2 =
+* add missing loading="lazy" attribute for the crop preview
 
 = 1.5.1 =
 * loading="lazy" attribute for WP dashboard images
