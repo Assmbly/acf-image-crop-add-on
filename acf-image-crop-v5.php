@@ -346,13 +346,13 @@ class acf_field_image_crop extends acf_field_image {
             <li><a class="acf-icon -pencil dark" data-name="edit" href="#"><i class="acf-sprite-edit"></i></a></li>
             <li><a class="acf-icon -cancel dark" data-name="remove" href="#"><i class="acf-sprite-delete"></i></a></li>
         </ul>
-        <img data-name="image" src="<?php echo $url; ?>" alt="" loading="lazy"/>
+        <img data-name="image" src="<?php echo $url; ?>" alt="" width="<?php echo $imageData->original_image_width ?>" height="<?php echo $imageData->original_image_height ?>" loading="lazy"/>
         <div class="crop-section">
             <div class="crop-stage">
                 <div class="crop-action">
                     <h4><?php _e('Crop the image','acf-image_crop'); ?></h4>
                 <?php if ($imageData->original_image ): ?>
-                    <img class="crop-image" src="<?php echo $imageData->original_image_url ?>" data-width="<?php echo $imageData->original_image_width ?>" data-height="<?php echo $imageData->original_image_height ?>" alt="">
+                    <img class="crop-image" src="<?php echo $imageData->original_image_url ?>" data-width="<?php echo $imageData->original_image_width ?>" data-height="<?php echo $imageData->original_image_height ?>" alt="" loading="lazy">
                 <?php endif ?>
                 </div>
                 <div class="crop-preview">
